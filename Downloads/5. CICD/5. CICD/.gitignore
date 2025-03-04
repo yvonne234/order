@@ -1,0 +1,15 @@
+# Ignore system files
+.DS_Store
+Thumbs.db
+
+# Ignore IDE files
+.vscode/
+.idea/
+
+# Ignore log files
+*.log
+*.bak
+
+# Ignore specific directories
+orderService/
+__MACOSX/
