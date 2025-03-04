@@ -1,0 +1,33 @@
+<div class="container">
+    <form>
+        <div class="row">
+            <div class="col-md-11">
+                <div class="form-group">
+                    <input type="email" class="form-control form-control-lg" id="SearchJob"
+                        aria-describedby="Search Job" placeholder="Search by Keywords, Location or Job title">
+                </div>
+            </div>
+            <div class="col-md-1">
+                <button type="submit" class="btn btn-lg btn-primary"> <i class="fa fa-search"></i></button>
+            </div>
+        </div>
+    </form>
+    <br>
+    <div class="row">
+    <div class="col-md-4 px-md-5" *ngFor = "let job of jobs;">
+        <div class="card box" style="width:100%">
+          <div style="width: 70%;" class="centre">
+            <h3>{{job.jobTitle}}</h3>
+            <p>Skills: {{job.skills}}</p>
+            <hr>
+          </div>
+          <div class="card-body">
+             
+            <button class="btn btn-warning btn-lg btn-block">Apply</button>
+          </div>
+        </div>
+        <br>
+      </div>
+      
+    </div>
+</div>

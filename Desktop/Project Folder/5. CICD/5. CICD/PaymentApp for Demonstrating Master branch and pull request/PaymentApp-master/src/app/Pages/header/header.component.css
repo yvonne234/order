@@ -1,0 +1,28 @@
+.navbar-custom {
+    background-color: #2b3e50;
+    color: white;
+}
+
+.badge{
+    position: absolute;
+    top: 1px;
+    padding: 5px 10px;
+    border-radius: 50%;
+    background-color: red;
+    color: white;
+}
+
+.notification{
+    cursor: pointer;
+    position: relative;
+    display: inline-block;
+    border-radius: 2px;
+}
+
+.center{
+    text-align: center;
+    
+}
+.topnav-right {
+    float: right;
+  }

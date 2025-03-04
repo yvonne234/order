@@ -1,0 +1,19 @@
+# Ignore system files and folders
+.DS_Store
+Thumbs.db
+ntuser.dat
+*.log
+OneDrive/
+.vscode/
+anaconda3/
+kubectl.exe
+
+# Ignore system files and folders
+.DS_Store
+Thumbs.db
+ntuser.dat
+*.log
+OneDrive/
+.vscode/
+anaconda3/
+kubectl.exe
