@@ -1,0 +1,37 @@
+1. Deploy same jar to elastic Beanstalk
+2. Integration flow (Code Pipeline)-> App -> Github -> AWS Code Build (BuildSpec.yml) -> Elastic Beanstalk
+3. Create a new repo
+4. Commit and push the code to github
+5. Add buildspec.yml
+
+Git repo: https://github.com/namanjainyr/Order-service
+
+GitHub Commands:
+
+1032  cd orderService
+ 1033  ls
+ 1034  echo "# Order-service" >> README.md
+ 1035  git init\n
+ 1036  git add .
+ 1037  git commit -m "first commit"
+ 1038  git branch -M master
+ 1039  git remote add origin https://github.com/namanjainyr/Order-service.git
+ 1040  git push -u origin main
+ 1041  git push -u origin master
+ 1042  clear
+ 1043  git branch
+ 1044  git pull
+ 1045  git checkout AddDataFeature
+ 1046  git pull
+ 1047  git add .
+ 1048  git commit -m "Added car feature"
+ 1049  git push
+ 1050  git add .
+ 1051  git commit -m "Fixed the build issue"
+ 1052  git push
+
+
+6. Go Create elastic beanstalk -> Environment name "Java" and JAva 8 -> Sample 
+7. Configure AWS CodePipeline -> Create Pipeline -> Next -> Source Github -> COnnect -> Master -> Build provider -> CodeBuild -> Create Build project -> Amazon Linux 2 -> Image 3.0 standard -> BuildSpec.yml ->           -> Continue to CodePipeline -> Next -> Deploy -> Elastic beanstalk -> App name -> environment
+8. Pipeline runs -> build code -> Build succes -> Deploy code
+9. Access application -> Beanstalk URL /orders

@@ -1,0 +1,16 @@
+<app-header (feature)="onFeatureSelect($event)"></app-header>
+
+<div class="jumbotron jumbotron-fluid" style="background:#1abc9c !important">
+  <div class="container">
+    <div class="centre">
+      <img src="../assets/Picture1.png" style="width: 150px; height: 150px;">
+      <h1 style="color: white">{{appendedTitle}}</h1>
+      <h4 style="font-family: 'Meie Script', cursive; color: white" *ngIf="loadedFeature === 'Main'">Brings seamless payment experience!</h4>
+    </div>
+  </div>
+</div>
+<router-outlet></router-outlet>
+<br>
+<div class="footer">
+  <small>Copyright &copy; All rights are protected by Better Off Corp.</small>
+</div>

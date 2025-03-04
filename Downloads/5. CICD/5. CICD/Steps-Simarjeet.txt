@@ -1,0 +1,13 @@
+
+1. To Get the code(java code) from repository-given by Simarjeet
+2. Create a new repository
+3. Upload the code from step 1
+4. Create a Codebuild Project: I have chosen corretto8, image: 12, choose buildspec.yml
+5. Create a Beanstalk App: 
+	a. Web server environment
+	b. app name:order-service
+	c. Platform -> Java
+	d. Corretto 8-Amazon Linux-2
+	e. Roles for Beanstalk, EC2, Next->
+6. Codepipeline
+7. Link from Beanstalk-change the last part-add /orders
